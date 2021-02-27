@@ -1,30 +1,16 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div
+    id="nav"
+    class="flex justify-between p-3 font-bold text-gray-800 bg-green-sea fixed w-full"
+  >
+    <div class="flex">
+      <img class="h-10 w-10 transform rotate-90" src="./assets/logo.png" />
+      <p class="my-auto mx-4 text-xl">Covid Cases</p>
+    </div>
+    <div class="my-auto mx-0">
+      <router-link to="/" class="mx-4">Home</router-link>
+      <router-link to="/about" class="mx-4">About</router-link>
+    </div>
   </div>
   <router-view />
 </template>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
